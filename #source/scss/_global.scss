@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+button:focus,
+input:focus {
+    outline: transparent;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    max-width: 100vw;
+    cursor: default;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.white-btn {
+    border-radius: 10px;
+    background: #FFF;
+    display: inline-flex;
+    height: 50px;
+    padding: 10px 107px;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+    color: var(--black, #1F2933);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+
+    &:hover {
+        background-color: rgba(#3E4C59, 1);
+        color: #fff;
+    }
+}
+
+
+
+
+// ----------- === ADAPTIVE === ------------ //
+
+@media (min-width: 1600px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1440px;
+    }
+}
