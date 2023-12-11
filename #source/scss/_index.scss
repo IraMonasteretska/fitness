@@ -494,10 +494,11 @@
     justify-content: space-between;
     cursor: pointer;
     transition: .3s;
+    position: relative;
+    padding-right: 35px;
 
     h3 {
         color: #FFF;
-        text-align: center;
         font-family: 'Work Sans', sans-serif;
         font-size: 16px;
         font-style: normal;
@@ -512,6 +513,9 @@
 
     .arrow {
         transition: .3s ease-in-out;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     &.active .arrow {
@@ -543,5 +547,377 @@
 
     ol li {
         list-style: decimal;
+    }
+}
+
+//  ADAPTIVE ------------------- //
+
+@media(max-width: 1600px) {
+    .info {
+        margin-top: 150px;
+    }
+
+    .formsect {
+        margin-top: 150px;
+    }
+
+    .imgsect {
+        margin-top: 150px;
+    }
+
+    .advantages__item {
+        padding: 25px;
+    }
+
+    .advantages {
+        margin-top: 150px;
+    }
+}
+
+@media(max-width: 1399.8px) {
+    .schedule {
+        padding: 120px 0 0;
+    }
+
+    .info__item-top h4 {
+        font-size: 32px;
+    }
+
+    .inputfield {
+        margin-right: 15px;
+        width: 250px;
+    }
+
+    .formwrap button {
+        margin-left: 5px;
+        width: 195px;
+        padding: 15px 30px;
+    }
+
+    .formsect__title h2 {
+        font-size: 32px;
+    }
+
+    .about {
+        padding-top: 160px;
+    }
+
+    .advantages__item {
+        min-height: 370px;
+    }
+
+    .heroscreen__inner h1 {
+        font-size: 36px;
+    }
+
+    .heroscreen__inner p {
+        font-size: 18px;
+    }
+
+    .heroscreen__inner {
+        max-width: 520px;
+    }
+}
+
+@media(max-width: 1199.8px) {
+    .info {
+        margin-top: 120px;
+    }
+
+    .info__item-content p {
+        font-size: 22px;
+    }
+
+    .info__item-top h4 {
+        font-size: 26px;
+    }
+
+    .info__item {
+        padding: 35px 25px;
+    }
+
+    .formsect {
+        margin-top: 120px;
+    }
+
+    .formsect__inner {
+        flex-wrap: wrap;
+    }
+
+    .formsect__title {
+        margin-bottom: 30px;
+    }
+
+    .formwrap {
+        justify-content: flex-start;
+    }
+
+    .formsect__form {
+        padding-left: 0;
+    }
+
+    .marquee {
+        height: 80px;
+
+        .text {
+            font-size: 110px;
+        }
+    }
+
+    .about {
+        padding-top: 120px;
+    }
+
+    .advantages {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 991.8px) {
+    .schedule {
+        padding: 100px 0 0;
+    }
+
+    .info__item {
+        margin-bottom: 30px;
+        padding: 40px 35px;
+    }
+
+    .marquee .text:after {
+        width: 35px;
+        height: 35px;
+    }
+
+    .imgsect {
+        margin-top: 100px;
+    }
+
+    .about {
+        padding: 120px 0 0;
+    }
+
+    .about__content {
+        width: 90%;
+        padding: 70px 40px;
+        right: initial;
+        top: initial;
+        transform: translateX(5%);
+        position: relative;
+        margin-top: -200px;
+    }
+
+    .advantages {
+        padding: 100px 0 70px;
+    }
+
+    .advantages__item {
+        margin-bottom: 35px;
+    }
+
+    .heroscreen__bg {
+        object-position: 65% 0%;
+    }
+
+    .heroscreen {
+        min-height: 700px;
+    }
+}
+
+@media(max-width: 767.8px) {
+    .schedule .marquee {
+        margin-top: 140px;
+    }
+
+    .schedule__title h3 {
+        font-size: 32px;
+    }
+
+    .schedule__row-time {
+        margin-right: 25px;
+    }
+
+    .schedule__row {
+        padding: 30px 0;
+    }
+
+    .schedule__row-btn a {
+        padding: 15px 35px;
+    }
+
+    .schedule__row-name p {
+        font-size: 22px;
+    }
+
+    .formsect {
+        margin-top: 90px;
+    }
+
+    .info {
+        margin-top: 90px;
+    }
+
+    .imgsect {
+        margin-top: 80px;
+    }
+
+    .about {
+        padding: 80px 0 0;
+    }
+
+    .about__content {
+        padding: 50px 35px;
+    }
+
+    .about__content h3 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 575.8px) {
+    .faq {
+        padding: 90px 0;
+    }
+    .schedule .marquee {
+        margin-top: 90px;
+    }
+    .schedule {
+        padding: 80px 0 0;
+    }
+    .schedule__row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .schedule__row-btn {
+        margin: 20px 0 0;
+        width: 100%;
+      
+    }
+
+    .info {
+        padding: 80px 0;
+    }
+
+    .info__item {
+        margin-bottom: 25px;
+        padding: 35px 25px;
+    }
+
+    .info__item-content p {
+        font-size: 18px;
+    }
+
+    .info__item-btn a {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .formwrap {
+        flex-wrap: wrap;
+    }
+
+    .inputfield {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .formwrap button {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+
+    .marquee .text:after {
+        width: 30px;
+        height: 30px;
+    }
+
+    .marquee {
+        height: 60px;
+    }
+
+    .marquee .text {
+        font-size: 90px;
+        padding-left: 25px;
+    }
+
+    .about__content {
+        width: 94%;
+        transform: translateX(3%);
+        margin-top: -150px;
+        padding: 30px 15px;
+    }
+
+    .advantages {
+        margin-top: 80px;
+        padding: 80px 0 50px;
+    }
+
+    .heroscreen__inner h1 {
+        font-size: 32px;
+    }
+
+    .heroscreen__inner p {
+        font-size: 16px;
+    }
+
+    .heroscreen__inner {
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width: 400px) {
+    .faq {
+        padding: 80px 0;
+    }
+    .schedule__title h3 {
+        font-size: 22px;
+    }
+    .info__item-img img {
+        height: 45vw;
+        object-fit: cover;
+    }
+
+    .info__item {
+        margin-bottom: 20px;
+        padding: 25px 15px;
+    }
+
+    .imgsect {
+        margin-top: 60px;
+    }
+
+    .imgsect__img img {
+        height: 50vw;
+        object-fit: cover;
+    }
+
+    .formsect {
+        margin-top: 70px;
+    }
+
+    .marquee .text:after {
+        width: 25px;
+        height: 25px;
+    }
+
+    .marquee .text {
+        font-size: 75px;
+        padding-left: 20px;
+    }
+
+    .about__content h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .about__content p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .about__content {
+        margin-top: -100px;
     }
 }

@@ -2,6 +2,15 @@
 $(document).ready(function () {
 
 
+// ----------------- === mobile menu ===  ---------------------- //
+    $('.burger').on('click', function () {
+        $('.header__nav').toggleClass('active');
+        $(this).toggleClass('on');
+    });
+
+
+
+
     // var advantages = $('.advantages');
     // var background = $('.background');
 
@@ -10,7 +19,7 @@ $(document).ready(function () {
     //     var elementOffset = advantages.height();
     //     var windowHeight = $(window).height();
     //     var start = scrollPos - elementOffset - 400
-        
+
     //     console.log(scrollPos);
     //     console.log(elementOffset);
     //     console.log(start);
@@ -34,7 +43,7 @@ $(document).ready(function () {
 
 
     // --- accordeon --- //
-    $('.faq__header').on('click', function() {
+    $('.faq__header').on('click', function () {
         $this = $(this);
         $this.toggleClass('active');
         $this.next('.faq__body').slideToggle();
