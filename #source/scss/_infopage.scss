@@ -1,0 +1,221 @@
+.infopage {
+    background: var(--bg, #F8F8F8);
+    padding-top: 90px;
+}
+
+
+.infopage__article {
+    max-width: 940px;
+    margin: 0 auto 70px;
+
+    h1 {
+        color: var(--black, #1F2933);
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    p,
+    li {
+        color: var(--gray-60, #616E7C);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    ul,
+    ol {
+        padding-left: 20px;
+    }
+
+    ul li {
+        list-style: disc;
+    }
+
+    ol li {
+        list-style: decimal;
+    }
+}
+
+.infopage__formsect {
+    position: relative;
+    margin-bottom: 118px;
+
+    img {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.infopage__formbox {
+    padding: 85px 147px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 53%;
+    border-radius: 10px;
+    background: var(--gray-20, #E4E7EE);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+
+    h3 {
+        color: var(--black, #1F2933);
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    p {
+        color: var(--gray-60, #616E7C);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        max-width: 415px;
+        width: 100%;
+        margin: 0 auto 35px;
+    }
+
+    .formwrap {
+        width: 100%;
+        display: block;
+    }
+
+    .inputfield {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+
+    .white-btn {
+        margin: 15px 0 0;
+        width: 100%;
+        text-transform: uppercase;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+//  ADAPTIVE ------------------- //
+
+@media(max-width: 1600px) {
+    .infopage__formbox {
+        padding: 65px 120px;
+        width: 750px;
+    }
+}
+
+@media(max-width: 1399.8px) {
+    .infopage__formbox {
+        padding: 37px 100px;
+        width: 650px;
+    }
+}
+
+@media(max-width: 1199.8px) {
+    .infopage__formbox h3 {
+        font-size: 37px;
+        margin-bottom: 30px;
+    }
+    .infopage__formbox {
+        padding: 35px 55px;
+        width: 550px;
+    }
+    .infopage__formbox .white-btn {
+        margin: 5px 0 0;
+    }
+    .infopage__formbox .inputfield {
+        margin-bottom: 12px;
+    }
+    .infopage__formsect img {
+        height: 560px;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 991.8px) {
+    .infopage__formsect {
+        margin-bottom: 95px;
+    }
+    .infopage__formsect img {
+        height: auto;
+    }
+    .infopage__formbox {
+        width: 90%;
+        padding: 70px 40px;
+        right: initial;
+        top: initial;
+        transform: translateX(5%);
+        position: relative;
+        margin-top: -200px;
+    }
+    .infopage {
+        padding-top: 60px;
+    }
+}
+
+@media(max-width: 767.8px) {
+    .infopage__formbox {
+        width: 90%;
+        padding: 30px 30px;
+    }
+    .infopage__formbox h3 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 575.8px) {
+    .infopage__formbox h3 {
+        font-size: 32px;
+    }
+    .infopage__formbox {
+        width: 94%;
+        transform: translateX(3%);
+        margin-top: -150px;
+        padding: 30px 15px;
+    }
+    .infopage__article h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .infopage__formsect {
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width: 400px) {
+    .infopage__formbox {
+        margin-top: -100px;
+    }
+    .infopage__formbox h3 {
+        font-size: 28px;
+    }
+    .infopage__article h1 {
+        font-size: 28px;
+    }
+}

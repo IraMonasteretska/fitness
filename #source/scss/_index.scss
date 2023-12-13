@@ -457,7 +457,7 @@
 // --- === faq section === ---- //
 
 .faq {
-    padding: 100px 0;
+    padding: 100px 0 50px;
     background: #424242;
     font-family: 'Work Sans', sans-serif;
 }
@@ -549,6 +549,136 @@
         list-style: decimal;
     }
 }
+
+.testimonials {
+    position: relative;
+    padding: 180px 0;
+}
+
+.testimonials__slider {
+    position: relative;
+    z-index: 2;
+    margin: 0 -10px;
+}
+
+.testimonials__slide {
+    padding: 0 10px;
+}
+
+.testimonials__item {
+    text-align: center;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 40px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.testimonials__item-img {
+    text-align: center;
+    margin-bottom: 32px;
+
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+}
+
+.testimonials__item-title {
+    h3 {
+        color: var(--black, #1F2933);
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+        margin-bottom: 20px;
+    }
+}
+
+.testimonials__item-content {
+    p {
+        color: var(--gray-60, #616E7C);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+    }
+}
+
+
+//   ---  == videosect ==  --- //
+
+.videosect {
+    padding: 165px;
+}
+
+.videowrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 4px 24px -4px rgba(54, 19, 19, 0.05);
+    margin-bottom: 40px;
+
+    .plyr--video,
+    .plyr__video-wrapper {
+        background: transparent;
+    }
+
+    .plyr__poster {
+        background-color: transparent;
+    }
+
+    .plyr.plyr--stopped .plyr__controls {
+        display: none
+    }
+
+    .plyr--full-ui.plyr--video .plyr__control--overlaid {
+        background: #272727;
+        border: 1.5px solid rgba(245, 245, 247, 0.05);
+        width: 100% !important;
+        max-width: 48px;
+        flex: 0 0 48px;
+        height: 48px;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .plyr--full-ui input[type=range] {
+        color: #E4E7EE;
+    }
+
+    .plyr--video .plyr__control.plyr__tab-focus,
+    .plyr--video .plyr__control:hover,
+    .plyr--video .plyr__control[aria-expanded=true] {
+        background: #272727;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 //  ADAPTIVE ------------------- //
 
@@ -775,14 +905,17 @@
 
 @media(max-width: 575.8px) {
     .faq {
-        padding: 90px 0;
+        padding: 90px 0 30px;
     }
+
     .schedule .marquee {
         margin-top: 90px;
     }
+
     .schedule {
         padding: 80px 0 0;
     }
+
     .schedule__row {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -791,7 +924,7 @@
     .schedule__row-btn {
         margin: 20px 0 0;
         width: 100%;
-      
+
     }
 
     .info {
@@ -869,11 +1002,13 @@
 
 @media(max-width: 400px) {
     .faq {
-        padding: 80px 0;
+        padding: 80px 0 25px;
     }
+
     .schedule__title h3 {
         font-size: 22px;
     }
+
     .info__item-img img {
         height: 45vw;
         object-fit: cover;
