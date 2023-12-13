@@ -103,7 +103,7 @@ if (document.querySelector('video')) {
         // const player = new Plyr('#player', { controls });
         const players = Plyr.setup('.video__controls', {
             controls,
-            autoplay: 'true',
+            autoplay: 'false',
         });
 
         // Expose
