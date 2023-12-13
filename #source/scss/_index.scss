@@ -371,7 +371,7 @@
 // --- === schedule section === ---- //
 
 .schedule {
-    padding: 160px 0 0;
+    padding: 160px 0;
 
     .marquee {
         margin-top: 170px;
@@ -553,6 +553,7 @@
 .testimonials {
     position: relative;
     padding: 180px 0;
+    margin-bottom: 165px;
 }
 
 .testimonials__slider {
@@ -607,23 +608,16 @@
         font-style: normal;
         font-weight: 400;
         line-height: 160%;
-        /* 25.6px */
     }
 }
 
 
 //   ---  == videosect ==  --- //
 
-.videosect {
-    padding: 165px;
-}
-
 .videowrap {
-    position: relative;
+    margin-bottom: 130px;
+    border-radius: 10px;
     overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0px 4px 24px -4px rgba(54, 19, 19, 0.05);
-    margin-bottom: 40px;
 
     .plyr--video,
     .plyr__video-wrapper {
@@ -683,6 +677,11 @@
 //  ADAPTIVE ------------------- //
 
 @media(max-width: 1600px) {
+    .testimonials__item {
+        padding: 30px 30px;
+        height: 420px;
+    }
+
     .info {
         margin-top: 150px;
     }
@@ -705,8 +704,17 @@
 }
 
 @media(max-width: 1399.8px) {
+    .testimonials__item-img {
+        margin-bottom: 25px;
+    }
+
+    .testimonials {
+        padding: 140px 0;
+        margin-bottom: 130px;
+    }
+
     .schedule {
-        padding: 120px 0 0;
+        padding: 120px 0;
     }
 
     .info__item-top h4 {
@@ -804,8 +812,18 @@
 }
 
 @media(max-width: 991.8px) {
+    .testimonials {
+        padding: 120px 0;
+        margin-bottom: 110px;
+    }
+
+    .testimonials__item {
+        height: 450px;
+    }
+
+
     .schedule {
-        padding: 100px 0 0;
+        padding: 100px 0;
     }
 
     .info__item {
@@ -854,6 +872,20 @@
 }
 
 @media(max-width: 767.8px) {
+    .testimonials {
+        padding: 100px 0;
+        margin-bottom: 100px;
+    }
+
+    .videowrap {
+        margin-bottom: 100px;
+    }
+
+    .testimonials__item {
+        min-height: 380px;
+        height: auto;
+    }
+
     .schedule .marquee {
         margin-top: 140px;
     }
@@ -908,12 +940,9 @@
         padding: 90px 0 30px;
     }
 
-    .schedule .marquee {
-        margin-top: 90px;
-    }
 
     .schedule {
-        padding: 80px 0 0;
+        padding: 80px 0;
     }
 
     .schedule__row {
@@ -1001,6 +1030,16 @@
 }
 
 @media(max-width: 400px) {
+
+
+    .videowrap {
+        margin-bottom: 70px;
+    }
+    .testimonials {
+        padding: 80px 0;
+        margin-bottom: 75px;
+    }
+
     .faq {
         padding: 80px 0 25px;
     }

@@ -14,9 +14,26 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        speed:900,
+        autoplaySpeed: 1880,
         infinite: true,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                }
+            },
+        ]
     });
 
     // ------ accordeon ------ //
