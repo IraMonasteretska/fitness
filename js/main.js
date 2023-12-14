@@ -56,7 +56,7 @@ $(document).ready(function () {
 
 
 AOS.init({
-    duration: 1400,
+    duration: 1200,
     disable: 'mobile',
     easing: 'ease',
     once: true,

@@ -93,6 +93,21 @@ body {
     }
 }
 
+.textanim{
+    overflow: hidden;
+    h1{
+        animation: textAnim .5s ease-in-out forwards;
+        opacity: 0;
+        transform: translateY(170%) rotate(10deg);
+    }
+}
+@keyframes textAnim {
+    to{
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+}
+
 
 
 
@@ -114,6 +129,14 @@ body {
     .white-btn {
         width: 100%;
         padding: 10px 20px;
+    }
+    .textanim{
+        overflow: hidden;
+        h1{
+            animation: none;
+            opacity: 1;
+            transform: translateY(0%) rotate(0deg);
+        }
     }
 
 }
