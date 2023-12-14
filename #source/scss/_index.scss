@@ -116,7 +116,7 @@
     z-index: 2;
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
+    translate: 0 -50%;
     border-radius: 10px;
     background: var(--gray-20, #E4E7EE);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
@@ -552,8 +552,7 @@
 
 .testimonials {
     position: relative;
-    padding: 180px 0;
-    margin-bottom: 165px;
+    padding: 180px 0 200px;
 }
 
 .testimonials__slider {
@@ -569,7 +568,7 @@
 .testimonials__item {
     text-align: center;
     border-radius: 10px;
-    background: #FFF;
+    background: #E4E7EE;
     padding: 40px;
     height: 400px;
     overflow: hidden;

@@ -53,9 +53,6 @@
                                     <div class="header__phone">
                                         <a href="tel:098 567 56 56">098 567 56 56</a>
                                     </div>
-                                    <div class="header__btn">
-                                        <a href="#">Log in</a>
-                                    </div>
                                 </div>
                             </nav>
                             <button class="burger burger2"><span></span></button>
@@ -64,9 +61,6 @@
                             <div class="header__info">
                                 <div class="header__phone">
                                     <a href="tel:098 567 56 56">098 567 56 56</a>
-                                </div>
-                                <div class="header__btn">
-                                    <a href="#">Log in</a>
                                 </div>
                             </div>
                         </div>
@@ -143,13 +137,13 @@
 
             <section class="about">
                 <div class="container">
-                    <div class="about__inner" data-aos="fade-left">
-                        <div class="row">
+                    <div class="about__inner" >
+                        <div class="row" data-aos="slide-up">
                             <div class="col-lg-8">
                                 <img src="img/img_fit.jpg" alt="img" class="about__img">
                             </div>
                         </div>
-                        <div class="about__content">
+                        <div class="about__content" data-aos="fade-left" data-aos-delay="200">
                             <h3>
                                 Let's get fit together.
                             </h3>
@@ -238,7 +232,7 @@
                 <div class="container">
                     <div class="info__inner">
                         <div class="row">
-                            <div class="col-lg-6" data-aos="fade-right">
+                            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
                                 <div class="info__item">
                                     <div class="info__item-img">
                                         <img src="img/info_item1.png" alt="img">
@@ -266,7 +260,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6" data-aos="fade-left">
+                            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
                                 <div class="info__item">
                                     <div class="info__item-img">
                                         <img src="img/info_item2.png" alt="img">
@@ -299,7 +293,7 @@
                 </div>
             </section>
 
-            <section class="schedule">
+            <!-- <section class="schedule">
                 <div class="container">
                     <div class="schedule__title" data-aos="fade-up">
                         <h3>
@@ -395,10 +389,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <section class="testimonials">
-                <div class="background"></div>
                 <div class="container">
                     <div class="testimonials__slider" data-aos="fade" data-aos-delay="200">
 
@@ -470,14 +463,6 @@
             </section>
 
             <section class="videosect">
-                <div class="container">
-                    <div class="videowrap">
-                        <video data-plyr-config='{ "autoplay": "true" }' controls playsinline
-                            poster="img/videoposter.png" id="player" class="video__controls">
-                            <source src="video/video.mp4" type="video/mp4" />
-                        </video>
-                    </div>
-                </div>
                 <div class="marquee">
                     <p class="text">
                         Be better
@@ -489,9 +474,17 @@
                         Be better
                     </p>
                 </div>
+                <div class="container">
+                    <div class="videowrap">
+                        <video controls playsinline
+                            poster="img/videoposter.png" id="player" class="video__controls">
+                            <source src="video/video.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
             </section>
 
-            <section class="faq">
+            <!-- <section class="faq">
                 <div class="container">
                     <div class="faq__title">
                         <h2>
@@ -633,7 +626,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
         </main>
 
