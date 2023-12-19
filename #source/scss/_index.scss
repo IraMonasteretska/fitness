@@ -368,187 +368,7 @@
     }
 }
 
-// --- === schedule section === ---- //
-
-.schedule {
-    padding: 160px 0;
-
-    .marquee {
-        margin-top: 170px;
-    }
-}
-
-.schedule__title {
-    max-width: 550px;
-    text-align: center;
-    margin: 0 auto 30px;
-
-    h3 {
-        color: var(--black, #1F2933);
-        font-size: 39px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 110%;
-    }
-}
-
-.schedule__subtitle {
-    max-width: 550px;
-    text-align: center;
-    margin: 0 auto 35px;
-}
-
-.schedule__inner {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
-}
-
-.schedule__row {
-    display: flex;
-    align-items: center;
-    padding: 40px 0;
-    border-bottom: 1px solid rgba(#3E4C59, 0.2);
-}
-
-.schedule__row-time {
-    margin-right: 40px;
-
-    p {
-        position: relative;
-        color: var(--black, #1F2933);
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 160%;
-        opacity: 0.6;
-    }
-
-    span {
-        display: inline-block;
-        vertical-align: top;
-        color: var(--black, #1F2933);
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 160%;
-    }
-}
-
-.schedule__row-name {
-    p {
-        color: var(--black, #1F2933);
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 160%;
-    }
-}
-
-.schedule__row-btn {
-    margin: 0 0 0 auto;
-
-    a {
-        border: 2px solid var(--gray-80, #3E4C59);
-        padding: 19px 42px;
-    }
-}
-
-// --- === faq section === ---- //
-
-.faq {
-    padding: 100px 0 50px;
-    background: #424242;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.faq__title {
-    margin-bottom: 50px;
-
-    h2 {
-        color: #FFF;
-        text-align: center;
-        font-size: 38px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 110%;
-        text-transform: uppercase;
-
-    }
-}
-
-.faq__inner {
-    max-width: 670px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.faq__row {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--white, #FFF);
-    margin-bottom: 24px;
-}
-
-.faq__header {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: .3s;
-    position: relative;
-    padding-right: 35px;
-
-    h3 {
-        color: #FFF;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        text-transform: uppercase;
-    }
-
-    &:hover {
-        opacity: 0.6;
-    }
-
-    .arrow {
-        transition: .3s ease-in-out;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    &.active .arrow {
-        transform: rotate(180deg);
-    }
-}
-
-.faq__body {
-    padding: 30px 0px;
-    display: none;
-
-    li,
-    p {
-        color: #FFF;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-    }
-
-    ul,
-    ol {
-        padding: 10px 20px;
-    }
-
-    ul li {
-        list-style: disc;
-    }
-
-    ol li {
-        list-style: decimal;
-    }
-}
+// ---- === testimonials sect === ---- //
 
 .testimonials {
     position: relative;
@@ -657,10 +477,7 @@
         background: #272727;
     }
 
-
-
 }
-
 
 
 
@@ -712,9 +529,6 @@
         margin-bottom: 130px;
     }
 
-    .schedule {
-        padding: 120px 0;
-    }
 
     .info__item-top h4 {
         font-size: 32px;
@@ -821,10 +635,6 @@
     }
 
 
-    .schedule {
-        padding: 100px 0;
-    }
-
     .info__item {
         margin-bottom: 30px;
         padding: 40px 35px;
@@ -885,29 +695,6 @@
         height: auto;
     }
 
-    .schedule .marquee {
-        margin-top: 140px;
-    }
-
-    .schedule__title h3 {
-        font-size: 32px;
-    }
-
-    .schedule__row-time {
-        margin-right: 25px;
-    }
-
-    .schedule__row {
-        padding: 30px 0;
-    }
-
-    .schedule__row-btn a {
-        padding: 15px 35px;
-    }
-
-    .schedule__row-name p {
-        font-size: 22px;
-    }
 
     .formsect {
         margin-top: 90px;
@@ -935,25 +722,9 @@
 }
 
 @media(max-width: 575.8px) {
-    .faq {
-        padding: 90px 0 30px;
-    }
 
 
-    .schedule {
-        padding: 80px 0;
-    }
 
-    .schedule__row {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .schedule__row-btn {
-        margin: 20px 0 0;
-        width: 100%;
-
-    }
 
     .info {
         padding: 80px 0;
@@ -1039,13 +810,7 @@
         margin-bottom: 75px;
     }
 
-    .faq {
-        padding: 80px 0 25px;
-    }
 
-    .schedule__title h3 {
-        font-size: 22px;
-    }
 
     .info__item-img img {
         height: 45vw;

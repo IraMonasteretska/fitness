@@ -36,13 +36,6 @@ $(document).ready(function () {
         ]
     });
 
-    // ------ accordeon ------ //
-    $('.faq__header').on('click', function () {
-        $this = $(this);
-        $this.toggleClass('active');
-        $this.next('.faq__body').slideToggle();
-    });
-
 
     // player
     if ($('#player').length) {
@@ -51,8 +44,6 @@ $(document).ready(function () {
 
 
 });
-
-
 
 
 AOS.init({
